@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="forest">
+<head>
+  <meta charset="UTF-8">
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prata&family=Readex+Pro:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="/assets/main.bundle.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
+    <script src="/assets/js/main.js"></script>
+  <script src="/assets/main.bundle.js" defer></script>
+  <title>{{ title }}</title>
+  {% block head %}{% endblock %}
+</head>
+<body class="antialiased bg-body text-body font-body">
+  <div class="">
+    {% include "header.njk" %}
+
+  {% block body %}
+
+  
+    <div class="container py-8">
+      {{ content | safe }}
+    </div>
+  {% endblock %}
+
+  </div>
+</body>
+</html>
