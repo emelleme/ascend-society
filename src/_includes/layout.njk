@@ -11,6 +11,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
     <script src="/assets/js/main.js"></script>
   <script src="/assets/main.bundle.js" defer></script>
+  <style>
+/* Hide the dropdown content by default */ul.dropdown-content {  display: none;}/* Show the dropdown content when the parent element is hovered or focused */li:hover > ul.dropdown-content, li:focus-within > ul.dropdown-content {  display: block;}
+  </style>
   <title>{{ title }}</title>
   {% block head %}{% endblock %}
 </head>
@@ -28,4 +31,7 @@
 
   </div>
 </body>
+<script>
+const collectionLink = document.querySelector('.relative');const dropdownContent = collectionLink.querySelector('ul.dropdown-content');// Add a click event listener to the Collection linkcollectionLink.addEventListener('click', function() {  // Toggle the "hidden" class on the dropdown content  dropdownContent.classList.toggle('hidden');});
+</script>
 </html>
