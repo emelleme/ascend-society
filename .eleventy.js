@@ -1,6 +1,9 @@
 module.exports = (config) => {
   config.addPassthroughCopy({ 'public': './' })
   config.addPassthroughCopy({ './src/assets': 'assets' })
+   config.addCollection('aboutUs', function(collection) {
+    return collection.getFilteredByGlob('./src/about-us-index.njk');
+  });
   // config.addPassthroughCopy({ 'src/admin/config.yml': './admin/config.yml' }) // netlify admin
   config.setBrowserSyncConfig({
     files: ['dist/**/*'],
@@ -22,5 +25,7 @@ module.exports = (config) => {
       input: 'src',
       output: 'dist',
     },
+    templateFormats: ['njk', 'md', 'html', 'liquid'],
+    htmlTemplateEngine: 'njk',
   }
 }
