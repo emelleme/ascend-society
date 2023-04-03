@@ -1,5 +1,5 @@
 import { Router } from 'itty-router'
-const base = "http://localhost:3003"
+const base = "https://ascendsociety.org/"
 const statusCode = 302
 
 async function handleRedirect(request) {
