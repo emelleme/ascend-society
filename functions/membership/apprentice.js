@@ -1,4 +1,4 @@
-const LINK_TO = "https://form.jotform.com/230816160501141"
+const LINK_TO = "https://form.jotform.com/230925389421156"
 export async function onRequestGet(context) {
     
     // Contents of context object
