@@ -1,20 +1,24 @@
-<div class="flex p-8 gap-4 flex-wrap" style="flex-wrap: wrap">
-  {% for card in booksData %}
-   <div class="mx-2">
-    <div class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-      <a href="#!" data-te-ripple-init data-te-ripple-color="light">
-        <img class="rounded-t-lg" src="{{ card.imageSrc }}" alt="{{ card.title }}" />
-      </a>
-      <div class="p-6">
-        <h5 class="mb-2 text-xl font-medium">{{ card.title }}</h5>
-         <div class="mb-2">
-          {{ card.price }}
-        </div>
-        <a href="#" class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]" data-te-ripple-init data-te-ripple-color="light">
-          Buy Now
-        </a>
+<div class="flex p-8 gap-4 flex-wrap" style="flex-wrap: wrap" style="gap: 24px; padding: 40px;">
+   {% for card in booksData %}
+   <div class="mx-2 mb-4" >
+      <div class="block rounded-lg" style="box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);  box-sizing: border-box; border-radius: 8px;
+         border-radius: 2px;
+         background-clip: padding-box;">
+         <a href="#!" data-te-ripple-init data-te-ripple-color="light">
+         <img class="rounded-t-lg" style="border-radius: 8px 8px 0 0;" src="{{ card.imageSrc }}" alt="{{ card.title }}" />
+         </a>
+         <div class="p-6" style="padding: 16px;">
+            <h5 class="mb-2 text-xl font-medium">{{ card.title }}</h5>
+            <div class="mb-2">
+               {{ card.price }}
+            </div>
+            <a href="#" class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase" style="background: #1eb853; height: 44px; border-radius: 4px; display: flex;
+               align-items: center;
+               justify-content: center;">
+            Buy Now
+            </a>
+         </div>
       </div>
-    </div>
-    </div>
-  {% endfor %}
+   </div>
+   {% endfor %}
 </div>
