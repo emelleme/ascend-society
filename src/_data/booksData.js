@@ -82,13 +82,13 @@ const booksData = [
     id: 14,
  imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     title: "Egypt and India African Origins",
-    price: "$23.00"
+    price: "$29.95"
   },
   {
     id: 15,
  imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     title: "Electric Body, Electric Health",
-    price: "$16.00"
+    price: "$24.50"
   },
   {
     id: 16,
@@ -130,7 +130,7 @@ const booksData = [
     id: 22,
  imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     title: "Maat Kemetic-Soulism",
-    price: "$45.00"
+    price: "$54.95"
   },
   {
     id: 23,
@@ -148,36 +148,36 @@ const booksData = [
     id: 25,
  imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     title: "The Alchemist",
-    price: "$17.00"
+    price: "$18.00"
   },
   {
     id: 26,
  imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     title: "The Apocrypha",
-    price: "$16.00"
+    price: "$18.00"
   },
   {
     id: 27,
     title: "The Egyptian Book of the Dead",
-    price: "$35.00",
+    price: "$29.00",
  imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
   },
   {
     id: 28,
     title: "The Fifth Agreement",
-    price: "$12.50",
+    price: "$14.00",
  imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
   },
   {
     id: 29,
     title: "The Kemetic Tree of Life",
-    price: "$28.00",
+    price: "$46.00",
  imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
   },
   {
     id: 30,
     title: "The Kybalion Centenary",
-    price: "$20.00",
+    price: "$22.00",
  imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
   },
   {
@@ -213,7 +213,7 @@ const booksData = [
   {
     id: 37,
     title: "Metu Neter Volume 1",
-    price: "$40.00",
+    price: "$200.00",
  imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
   },
   {
@@ -237,7 +237,7 @@ const booksData = [
   {
     id: 41,
     title: "Daily laws",
-    price: "$21.00",
+    price: "$29.00",
  imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
   },
   {
