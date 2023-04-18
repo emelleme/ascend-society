@@ -12,11 +12,20 @@
             <div class="mb-2">
                {{ card.price }}
             </div>
-            <a href="#" class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase" style="background: #1eb853; height: 44px; border-radius: 4px; display: flex;
-               align-items: center;
-               justify-content: center;">
-            Buy Now
-            </a>
+       {% if not card.notInStock %}
+  <a href="#" class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase" style="background: #1eb853; color: white; height: 44px; border-radius: 4px; display: flex;
+         align-items: center;
+         justify-content: center;">
+     Buy Now
+  </a>
+{% else %}
+  <a href="#" class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase" style="background: #ababab; height: 44px; border-radius: 4px; display: flex;
+         align-items: center;
+         justify-content: center;">
+     Not in Stock
+  </a>
+{% endif %}
+
          </div>
       </div>
    </div>
