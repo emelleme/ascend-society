@@ -34,7 +34,8 @@ const booksData = [
     id: 6,
     imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     title: "Art of War: Sun Tzu",
-    price: "$13.00"
+    price: "$13.00",
+    notInStock: true
   },
   {
     id: 7,
@@ -100,7 +101,8 @@ const booksData = [
     id: 17,
   imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     title: "Ethiopia and the Origin of Civilization",
-    price: "$19.00"
+    price: "$19.00",
+    notInStock: true
   },
   {
     id: 18,
@@ -112,7 +114,8 @@ const booksData = [
     id: 19,
  imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     title: "From Poverty to Power",
-    price: "$7.00"
+    price: "$14.95",
+    notInStock: true
   },
   {
     id: 20,
@@ -136,7 +139,8 @@ const booksData = [
     id: 23,
  imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     title: "Maat the 11 Laws of God",
-    price: "$50.00"
+    price: "$50.00",
+    notInStock: true
   },
   {
     id: 24,
@@ -185,7 +189,8 @@ const booksData = [
     title: "The mysticism of Sound and Vibrations",
     price: "$27.00",
  imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-  },
+notInStock: true
+},
   {
     id: 32,
     title: "The Power of Breath",
@@ -197,7 +202,8 @@ const booksData = [
     title: "Thoth",
     price: "$17.00",
  imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-  },
+notInStock: true  
+},
   {
     id: 34,
     title: "Vitamins and Minerals",
@@ -233,7 +239,8 @@ const booksData = [
     title: "The 50th Law",
     price: "$15.25",
  imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-  },
+notInStock: true  
+},
   {
     id: 41,
     title: "Daily laws",
@@ -377,6 +384,90 @@ const booksData = [
     title: "They Came Before Columbus",
     price: "$20.00",
  imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  },
+  {
+    id: 66,
+    title: "The origin & Evolution of religion",
+    price: "$24.95",
+    imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  },
+  {
+    id: 67,
+    title: "The Torah",
+    price: "$34.95",
+    imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  },
+    {
+    id: 68,
+    title: "The God Code",
+    price: "$14.95",
+    imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  },
+    {
+    id: 69,
+    title: "The power of your subconscious mind",
+    price: "$12.00",
+    imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  },
+    {
+    id: 70,
+    title: "Ancient and Modern Britons",
+    price: "$24.95",
+    imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  },
+    {
+    id: 71,
+    title: "The Silva Mind Control Method",
+    price: "$18.00",
+    imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  },
+    {
+    id: 72,
+    title: "Essential Zen",
+    price: "$18.00",
+    imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  },
+    {
+    id: 73,
+    title: "Encyclopedia of the Yoruna",
+    price: "-",
+    imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  },
+    {
+    id: 74,
+    title: "We the black Jews v1&2",
+    price: "$30.00",
+    imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  },
+    {
+    id: 75,
+    title: "Pyramids in America",
+    price: "$15.00",
+    imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  },
+    {
+    id: 76,
+    title: "Power vs Force",
+    price: "$18.00",
+    imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  },
+    {
+    id: 77,
+    title: "The new world order",
+    price: "$22.00",
+    imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  },
+    {
+    id: 78,
+    title: "The serpent power",
+    price: "$16.95",
+    imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  },
+    {
+    id: 79,
+    title: "The holy Kabbalah",
+    price: "$26.95",
+    imageSrc: "https://images.unsplash.com/photo-1472905981516-5ac09f35b7f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8QWZyaWNhbiUyMG9yaWdpbnMlMjBib29rfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
   }
 ];
 
