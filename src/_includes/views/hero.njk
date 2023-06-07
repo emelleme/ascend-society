@@ -4,9 +4,9 @@
       <div class="mx-auto">
 
         <div class="flex items-center mb-24">
-          <span class=" text-xl text-white">Dates: July 1st & 2nd</span>
+          <span class=" text-xl text-white">Dates: {{ homepage[0].fields.heroEventDates}}</span>
            <div class="mx-4 rounded-full bg-gray-200 h-1 w-1"></div>
-           <span class="text-xl text-white ml-6">Cost $125 per day</span>
+           <span class="text-xl text-white ml-6">Cost $ {{ homepage[0].fields.heroEventCost }} per day</span>
         </div>
         <form action="#" method="post">
           <div class="flex">
