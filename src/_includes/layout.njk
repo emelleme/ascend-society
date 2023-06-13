@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="forest">
-<head>
-  <meta charset="UTF-8">
-  <meta charset="utf-8">
+  <head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prata&family=Readex+Pro:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="/assets/main.bundle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
     <script src="/assets/js/main.js"></script>
-  <script src="/assets/main.bundle.js" defer></script>
-  <style>
-/* Hide the dropdown content by default */ul.dropdown-content {  display: none;}/* Show the dropdown content when the parent element is hovered or focused */li:hover > ul.dropdown-content, li:focus-within > ul.dropdown-content {  display: block;}
-  </style>
-  <title>{{ title }}</title>
-  {% block head %}{% endblock %}
-</head>
-<body class="antialiased bg-body text-body font-body">
-  <div class="">
-    {% include "header.njk" %}
+    <script src="/assets/main.bundle.js" defer></script>
+    <style>
+      /* Hide the dropdown content by default */
+      ul.dropdown-content {
+        display: none;
+      }
+      /* Show the dropdown content when the parent element is hovered or focused */
+      li:focus-within > ul.dropdown-content,
+      li:hover > ul.dropdown-content {
+        display: block;
+      }
+    </style>
+    <title>{{ title }}</title>
+    {% block head %}{% endblock %}
+  </head>
+  <body class="antialiased bg-body text-body font-body">
+    <div class="">
+      {% include "header.njk" %}
 
-  {% block body %}
+      {% block body %}
 
-  
-    <div class="container py-8">
-      {{ content | safe }}
+        <div class="container py-8">
+          {{ content | safe }}
+        </div>
+      {% endblock %}
+
     </div>
-  {% endblock %}
-
-  </div>
-</body>
-<script>
-const collectionLink = document.querySelector('.relative');const dropdownContent = collectionLink.querySelector('ul.dropdown-content');// Add a click event listener to the Collection linkcollectionLink.addEventListener('click', function() {  // Toggle the "hidden" class on the dropdown content  dropdownContent.classList.toggle('hidden');});
-</script>
+  </body>
+  <script>
+    const collectionLink = document.querySelector('.relative');
+    const dropdownContent = collectionLink.querySelector('ul.dropdown-content'); // Add a click event listener to the Collection linkcollectionLink.addEventListener('click', function() {   Toggle the "hidden" class on the dropdown content  dropdownContent.classList.toggle('hidden');});
+  </script>
 </html>
