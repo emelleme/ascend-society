@@ -1,13 +1,13 @@
-<section class="beer-section">
+<section class="menu-section">
   <div class="container">
   <img class="img-phresh" src="../assets/images/phresh.png"/>
-    <h2>Our Beers</h2>
-    <div class="beer-list">
-    {% for card in beersData %}
-      <div class="beer-item">
+    <h2>Our Menu</h2>
+    <div class="menu-list">
+    {% for card in eclecticData %}
+      <div class="menu-item">
         <img src={{card.imageSrc}} alt="Samuel Adams">
         <h3>{{card.title}}</h3>
-        <p class="beer-price">{{card.price}}</p>
+        <p class="menu-price">{{card.price}}</p>
       </div>
       {% endfor %}
     </div>
