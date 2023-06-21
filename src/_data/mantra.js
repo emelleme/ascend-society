@@ -4,7 +4,6 @@ const client = require('../../utils').contentfulClient;
 module.exports = async () => {
 	// create a request for all entries that match our post type. 
 	// we can use the `order` property to sort them reverse-chronologically by their published date.
-  const homepage = await client.getEntries({ content_type: 'homePage' });
-   console.log( 'aaa')
-  return homepage.items;
+  const mantra = await client.getEntries({ content_type: 'mantra' });
+  return mantra.items;
 };
