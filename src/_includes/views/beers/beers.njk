@@ -1,0 +1,15 @@
+<section class="beer-section">
+  <div class="container">
+  <img class="img-phresh" src="../assets/images/phresh.png"/>
+    <h2>Our Beers</h2>
+    <div class="beer-list">
+    {% for card in beersData %}
+      <div class="beer-item">
+        <img src={{card.imageSrc}} alt="Samuel Adams">
+        <h3>{{card.title}}</h3>
+        <p class="beer-price">{{card.price}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

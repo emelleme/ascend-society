@@ -1,0 +1,44 @@
+ 
+  {% set mainVideo =mantra[0].fields.mainVideo %}
+    {% set video1 =mantra[0].fields.video1 %}
+     {% set video2 =mantra[0].fields.video2 %}
+      {% set video3 =mantra[0].fields.video3 %}
+  <div class="mantra">
+   <div class="container">
+    <div class="header">
+    
+    
+      <img class="logo" src="../assets/images/mantra/logo.png">
+       <div class="video-top">
+        <iframe width="100" height="100" src="{{mainVideo}}" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="video-section">
+     
+      <div class="video-rows">
+        <div class="video-row">
+          <div class="video-box">
+            <a href="{{video1}}">
+                <iframe src="{{video1}}" frameborder="0" allowfullscreen></iframe>
+              <h3>Video Title 1</h3>
+            </a>
+          </div>
+        
+          <div class="video-box">
+            <a href="{{video2}}">
+                 <iframe src="{{video2}}" frameborder="0" allowfullscreen></iframe>
+              <h3>Video Title 2</h3>
+            </a>
+          </div>
+          <div class="video-box">
+            <a href="{{video3}}">
+                 <iframe src="{{video3}}" frameborder="0" allowfullscreen></iframe>
+              <h3>Video Title 3</h3>
+            </a>
+          </div>
+        </div>
+        <!-- Add more video rows here -->
+      </div>
+    </div>
+    </div>
+  </div>

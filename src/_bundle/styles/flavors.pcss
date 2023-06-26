@@ -1,0 +1,102 @@
+.flavors {
+  width: 800px;
+  text-align: center;
+  margin: 32px auto;
+    @media screen and (max-width: 780px) {
+      width: unset;
+          display: flex;
+    flex-direction: column;
+
+    }
+}
+
+.flavors-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.image-section {
+      display: grid;
+    grid-template-columns: auto auto ;
+  margin-bottom: 40px;
+  margin: 0 auto;
+  gap: 24px;
+
+     @media screen and (max-width: 780px) {
+       grid-template-columns: auto;
+    }
+}
+
+.image-day {
+  text-align: center;
+      margin-bottom: 16px;
+   @media screen and (max-width: 780px) {
+      max-width: 370px;
+    }
+ 
+}
+
+.image-day img {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  min-height: 360px;
+}
+
+.image-day span {
+  display: block;
+  margin-top: 10px;
+      margin-bottom: 20px;
+}
+
+.see-more-flavor {
+    background: orange;
+    padding: 8px 16px;
+}
+
+
+
+.flavors-section {
+  background-color: #f3eaf1;
+  padding: 50px 0;
+}
+
+.flavors-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flavors-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.flavors-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.flavors-item {
+  width: 200px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.flavors-item img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.flavors-item h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.flavors-price {
+  font-size: 16px;
+  color: #666;
+}
