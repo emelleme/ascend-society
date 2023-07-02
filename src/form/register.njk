@@ -1,0 +1,41 @@
+{# This page is built with nunjucks! #}
+
+{% set title = 'Ascend' %}
+{% extends "layout.njk" %}
+
+{% block body %}
+  <main class="">
+  <h1 class="title-register">Register User </h1>
+ <form name="fileForm" enctype="multipart/form-data" data-netlify="true">
+  <p>
+    <label>
+      <span>First Name:</span>
+      <input name="name" type="text"/>
+    </label>
+  </p>
+   <p>
+    <label>
+      <span>Last Name:</span>
+      <input name="last_name" type="text"/>
+    </label>
+  </p>
+
+   <p>
+    <label>
+      <span>Email Address:</span>
+      <input name="email" type="text"/>
+    </label>
+  </p>
+  <p>
+    <label>
+      <span>Upload Resume</span>
+      <input name="file" type="file"/>
+    </label>
+  </p>
+  <button>Submit</button>
+</form>
+<p class="result white red"></p> 
+
+<script src="/path/to/register.js" defer></script>
+  </main>
+{% endblock %}
